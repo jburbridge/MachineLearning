@@ -27,8 +27,8 @@ ifeq ($(UNAME),Darwin)
 	OPT_LFLAGS = -framework AppKit
 else
 	CFLAGS = -Wall -std=c++11
-	DBG_LFLAGS = -L/usr/local/lib -lpng
-	OPT_LFLAGS = -L/usr/local/lib -lpng
+	DBG_LFLAGS = -L/usr/local/lib
+	OPT_LFLAGS = -L/usr/local/lib
 endif
 
 DBG_CFLAGS = $(CFLAGS) -g -D_DEBUG
